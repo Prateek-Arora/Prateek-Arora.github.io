@@ -9,14 +9,8 @@ I'm Prateek Arora, a full-stack engineer in Bengaluru. I've spent five years in 
 working across the stack, from services in Java, Spring Boot and Node.js to front ends in React
 and TypeScript.
 
-These days I work on a greenfield risk API in Java and Spring Boot that partners call in real
-time, where latency budgets, retries, caching and failure modes are the daily work. I also build
-React micro-frontends and mentor engineers on testing and code review.
-
-Before that I built a payment-reminders system from zero for an SMB billing platform with more
-than 10 million users, re-architected a desktop app's build to halve its size, and led an
-AngularJS to Angular migration for a U.S. freight-logistics platform. I started as an intern and
-was promoted to engineer within five months.
+Most of my work sits where the backend meets the frontend: APIs with tight latency budgets, the
+retries, caching and failure handling around them, and the React apps that call them.
 
 Outside work I'm building [PgLens](https://github.com/Prateek-Arora/pglens), an open-source
 advisor that finds the queries costing a PostgreSQL database the most time and measures whether
@@ -28,8 +22,7 @@ an index really helped.
   actually breaks in production.
 - **Databases:** PostgreSQL internals, indexes, query plans, connection poolers.
 - **AI in engineering:** retrieval, evaluating LLM output, and working with coding agents.
-- **Frontend:** micro-frontends, build performance, accessibility, and shipping UI across many
-  markets.
+- **Frontend:** micro-frontends, build performance, accessibility, and internationalization.
 
 When a post gives a number, the method and the data are linked next to it.
 
