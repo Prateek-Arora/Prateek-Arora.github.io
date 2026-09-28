@@ -1,0 +1,31 @@
+---
+layout: default
+---
+<section class="intro">
+  <h1>I write about PostgreSQL: query performance, indexes, and what I learn building an open-source index advisor.</h1>
+  {% include links.html %}
+</section>
+
+<a class="project" href="https://github.com/Prateek-Arora/pglens">
+  <span class="eyebrow">Building</span>
+  <span class="project-name">PgLens</span>
+  <span class="project-desc">Finds the Postgres queries costing your database the most time, suggests an index for each, and measures whether it really helped. Self-hosted, and read-only on your database.</span>
+  <span class="project-link">github.com/Prateek-Arora/pglens <span aria-hidden="true">→</span></span>
+</a>
+
+<section class="writing" aria-labelledby="writing">
+  <h2 id="writing">Writing</h2>
+  {%- if site.posts.size > 0 %}
+  <ol class="post-list">
+    {%- for post in site.posts %}
+    <li>
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%-d %b %Y' }}</time>
+      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+      <p>{{ post.description | default: post.excerpt | strip_html | truncatewords: 32 }}</p>
+    </li>
+    {%- endfor %}
+  </ol>
+  {%- else %}
+  <p class="empty">The first post is on its way. <a href="{{ '/feed.xml' | relative_url }}">Subscribe by RSS</a> to get it.</p>
+  {%- endif %}
+</section>

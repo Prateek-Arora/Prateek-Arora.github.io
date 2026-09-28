@@ -1,0 +1,27 @@
+---
+layout: default
+---
+{%- assign words = content | strip_html | number_of_words %}
+<article class="post">
+  <header class="post-head">
+    <p class="meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%-d %B %Y' }}</time> · {{ words | divided_by: 220 | plus: 1 }} min read</p>
+    <h1>{{ page.title | escape }}</h1>
+    {%- if page.description %}
+    <p class="dek">{{ page.description }}</p>
+    {%- endif %}
+  </header>
+  <div class="prose">
+{{ content }}
+  </div>
+  {%- unless page.pglens_note == false %}
+  <aside class="note">
+    <p>I'm building <a href="https://github.com/Prateek-Arora/pglens">PgLens</a>, an open-source tool that finds the Postgres queries costing you the most time, suggests an index, and measures whether it helped. New posts come out on the <a href="{{ '/feed.xml' | relative_url }}">RSS feed</a>.</p>
+  </aside>
+  {%- endunless %}
+  {%- if page.previous or page.next %}
+  <nav class="post-nav" aria-label="More posts">
+    {%- if page.previous %}<a href="{{ page.previous.url | relative_url }}"><span>Older</span>{{ page.previous.title | escape }}</a>{% endif %}
+    {%- if page.next %}<a class="next" href="{{ page.next.url | relative_url }}"><span>Newer</span>{{ page.next.title | escape }}</a>{% endif %}
+  </nav>
+  {%- endif %}
+</article>

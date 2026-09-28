@@ -1,20 +1,47 @@
 title: Prateek Arora
 description: PostgreSQL, performance, and what I learn building PgLens.
-author:
-  name: Prateek Arora
+lang: en
 url: "https://prateek-arora.github.io"
 baseurl: ""
-theme: minima
+timezone: Asia/Kolkata
+permalink: /:year/:month/:title/
+
+author:
+  name: Prateek Arora
+  url: https://prateek-arora.github.io
+
+# Shown in the header of the home page and the footer, in this order. Add a line to show a profile.
+# Every link carries rel="me", which is what Mastodon checks to verify the website on a profile.
+links:
+  - name: GitHub
+    url: https://github.com/Prateek-Arora
+
+# jekyll-seo-tag: sameAs in the JSON-LD. Keep in step with links above.
+social:
+  name: Prateek Arora
+  links:
+    - https://github.com/Prateek-Arora
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-github_username: Prateek-Arora
-header_pages:
-  - about.md
-permalink: /:year/:month/:title/
-show_excerpts: true
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/og/default.png
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
 exclude:
   - README.md
   - Gemfile
   - Gemfile.lock
-timezone: Asia/Kolkata
