@@ -2,12 +2,12 @@
 layout: page
 title: About
 permalink: /about/
-description: "I'm Prateek Arora, a full-stack engineer. I write about building software end to end: distributed systems, reliability, databases, frontend, and AI."
+description: "I'm Prateek Arora, a full-stack engineer. I write about distributed systems, reliability, databases, frontend, and AI."
 ---
 
-I'm Prateek Arora, a full-stack engineer in Bengaluru. I've spent five years building software
-end to end in fintech and SaaS, from services in Java, Spring Boot and Node.js to front ends in
-React and TypeScript.
+I'm Prateek Arora, a full-stack engineer in Bengaluru. I've spent five years in fintech and SaaS,
+working across the stack, from services in Java, Spring Boot and Node.js to front ends in React
+and TypeScript.
 
 These days I work on a greenfield risk API in Java and Spring Boot that partners call in real
 time, where latency budgets, retries, caching and failure modes are the daily work. I also build
