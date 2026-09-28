@@ -1,5 +1,5 @@
 title: Prateek Arora
-description: PostgreSQL, performance, and what I learn building PgLens.
+description: Notes on software I build and learn from, on AI, distributed systems, databases, and the rest of tech.
 lang: en
 url: "https://prateek-arora.github.io"
 baseurl: ""
@@ -15,12 +15,18 @@ author:
 links:
   - name: GitHub
     url: https://github.com/Prateek-Arora
+  - name: Bluesky
+    url: https://bsky.app/profile/aroraprateek.bsky.social
+  - name: Mastodon
+    url: https://mastodon.social/@prateekarora
 
 # jekyll-seo-tag: sameAs in the JSON-LD. Keep in step with links above.
 social:
   name: Prateek Arora
   links:
     - https://github.com/Prateek-Arora
+    - https://bsky.app/profile/aroraprateek.bsky.social
+    - https://mastodon.social/@prateekarora
 
 plugins:
   - jekyll-feed

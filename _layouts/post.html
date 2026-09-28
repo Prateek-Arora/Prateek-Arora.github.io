@@ -13,11 +13,13 @@ layout: default
   <div class="prose">
 {{ content }}
   </div>
-  {%- unless page.pglens_note == false %}
   <aside class="note">
-    <p>I'm building <a href="https://github.com/Prateek-Arora/pglens">PgLens</a>, an open-source tool that finds the Postgres queries costing you the most time, suggests an index, and measures whether it helped. New posts come out on the <a href="{{ '/feed.xml' | relative_url }}">RSS feed</a>.</p>
+    {%- if page.pglens %}
+    <p>I'm building <a href="https://github.com/Prateek-Arora/pglens">PgLens</a>, an open-source tool that finds the Postgres queries costing you the most time, suggests an index, and measures whether it helped.</p>
+    {%- endif %}
+    {%- assign share = site.links | where_exp: "l", "l.name != 'GitHub'" %}
+    <p>New posts come out on the <a href="{{ '/feed.xml' | relative_url }}">RSS feed</a>{% if share.size > 0 %}, and I share them on {% for l in share %}{% unless forloop.first %}{% if forloop.last %} and {% else %}, {% endif %}{% endunless %}<a href="{{ l.url }}" rel="me">{{ l.name }}</a>{% endfor %}{% endif %}.</p>
   </aside>
-  {%- endunless %}
   {%- if page.previous or page.next %}
   <nav class="post-nav" aria-label="More posts">
     {%- if page.previous %}<a href="{{ page.previous.url | relative_url }}"><span>Older</span>{{ page.previous.title | escape }}</a>{% endif %}
