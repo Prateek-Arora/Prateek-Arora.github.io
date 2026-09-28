@@ -17,7 +17,7 @@ layout: default
     {%- if page.pglens %}
     <p>I'm building <a href="https://github.com/Prateek-Arora/pglens">PgLens</a>, an open-source tool that finds the Postgres queries costing you the most time, suggests an index, and measures whether it helped.</p>
     {%- endif %}
-    {%- assign share = site.links | where_exp: "l", "l.name != 'GitHub'" %}
+    {%- assign share = site.links | where: "share", true %}
     <p>New posts come out on the <a href="{{ '/feed.xml' | relative_url }}">RSS feed</a>{% if share.size > 0 %}, and I share them on {% for l in share %}{% unless forloop.first %}{% if forloop.last %} and {% else %}, {% endif %}{% endunless %}<a href="{{ l.url }}" rel="me">{{ l.name }}</a>{% endfor %}{% endif %}.</p>
   </aside>
   {%- if page.previous or page.next %}

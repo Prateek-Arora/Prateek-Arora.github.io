@@ -1,5 +1,5 @@
 title: Prateek Arora
-description: Notes on software I build and learn from, on AI, distributed systems, databases, and the rest of tech.
+description: Prateek Arora, software engineer. Notes on backend and distributed systems, reliability, databases, and building with AI.
 lang: en
 url: "https://prateek-arora.github.io"
 baseurl: ""
@@ -15,16 +15,21 @@ author:
 links:
   - name: GitHub
     url: https://github.com/Prateek-Arora
+  - name: LinkedIn
+    url: https://www.linkedin.com/in/aroraprateeka
   - name: Bluesky
     url: https://bsky.app/profile/aroraprateek.bsky.social
+    share: true
   - name: Mastodon
     url: https://mastodon.social/@prateekarora
+    share: true
 
 # jekyll-seo-tag: sameAs in the JSON-LD. Keep in step with links above.
 social:
   name: Prateek Arora
   links:
     - https://github.com/Prateek-Arora
+    - https://www.linkedin.com/in/aroraprateeka
     - https://bsky.app/profile/aroraprateek.bsky.social
     - https://mastodon.social/@prateekarora
 
