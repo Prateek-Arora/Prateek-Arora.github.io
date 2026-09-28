@@ -2,12 +2,12 @@
 layout: page
 title: About
 permalink: /about/
-description: "I'm Prateek Arora, a software engineer. I write about backend and distributed systems, reliability, databases, and building with AI."
+description: "I'm Prateek Arora, a full-stack engineer. I write about building software end to end: distributed systems, reliability, databases, frontend, and AI."
 ---
 
-I'm Prateek Arora, a software engineer in Bengaluru. I've spent five years on backend-leaning
-full-stack work in fintech and SaaS, mostly Java and Spring Boot, Node.js, and React with
-TypeScript.
+I'm Prateek Arora, a full-stack engineer in Bengaluru. I've spent five years building software
+end to end in fintech and SaaS, from services in Java, Spring Boot and Node.js to front ends in
+React and TypeScript.
 
 These days I work on a greenfield risk API in Java and Spring Boot that partners call in real
 time, where latency budgets, retries, caching and failure modes are the daily work. I also build
@@ -28,7 +28,8 @@ an index really helped.
   actually breaks in production.
 - **Databases:** PostgreSQL internals, indexes, query plans, connection poolers.
 - **AI in engineering:** retrieval, evaluating LLM output, and working with coding agents.
-- **Frontend at scale,** when it's interesting: micro-frontends and build performance.
+- **Frontend:** micro-frontends, build performance, accessibility, and shipping UI across many
+  markets.
 
 When a post gives a number, the method and the data are linked next to it.
 
