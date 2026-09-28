@@ -1,0 +1,20 @@
+title: Prateek Arora
+description: PostgreSQL, performance, and what I learn building PgLens.
+author:
+  name: Prateek Arora
+url: "https://prateek-arora.github.io"
+baseurl: ""
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+github_username: Prateek-Arora
+header_pages:
+  - about.md
+permalink: /:year/:month/:title/
+show_excerpts: true
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+timezone: Asia/Kolkata
