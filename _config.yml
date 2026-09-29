@@ -33,6 +33,13 @@ social:
     - https://bsky.app/profile/aroraprateek.bsky.social
     - https://mastodon.social/@prateekarora
 
+# feed.xml has every post. Planet PostgreSQL takes PostgreSQL posts only, so posts tagged
+# postgresql also go to /feed/by_tag/postgresql.xml, which is the feed registered there.
+feed:
+  tags:
+    only:
+      - postgresql
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

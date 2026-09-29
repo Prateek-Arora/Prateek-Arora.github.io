@@ -3,6 +3,7 @@ title: "A read-only safety belt that breaks your app's writes"
 description: "Through PgBouncer in transaction mode, a monitoring tool's read-only setting lands on the next client's connection."
 image: /assets/og/read-only-safety-belt.png
 pglens: true
+tags: [postgresql]
 ---
 The setting I added so my tool could never write to your database turned out to break your app's
 writes instead.
