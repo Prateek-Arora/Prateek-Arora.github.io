@@ -30,4 +30,4 @@ Views here are my own, not my employer's.
 
 Find me on [LinkedIn](https://www.linkedin.com/in/aroraprateeka), [GitHub](https://github.com/Prateek-Arora),
 [Bluesky](https://bsky.app/profile/aroraprateek.bsky.social) and
-[Mastodon](https://mastodon.social/@prateekarora), or follow the [RSS feed](/feed.xml).
+[Mastodon](https://mastodon.social/@prateekarora), or follow the [RSS feed](/rss/).
