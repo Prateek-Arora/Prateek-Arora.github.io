@@ -67,3 +67,8 @@ An integration test runs it against a real PgBouncer.
 
 The alternatives I rejected are in
 [ADR-0053](https://github.com/Prateek-Arora/pglens/blob/main/docs/decisions.md#adr-0053).
+
+**Update, 1 Oct:** PgBouncer 1.26.0, out on 23 September, now tracks `default_transaction_read_only`
+on Postgres 14 and later, so this exact leak is fixed there. Settings it doesn't track, like
+`statement_timeout`, still leak. It also tells the client its pool mode at login, so a tool can
+allow session mode and refuse only transaction mode.
